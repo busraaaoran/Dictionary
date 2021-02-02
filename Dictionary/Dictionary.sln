@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.28307.106
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dictionary", "Dictionary\Dictionary.csproj", "{F02F9408-F5BF-476E-A0FA-3E7E27A1FCE8}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "_Dictionary", "Dictionary\_Dictionary.csproj", "{F02F9408-F5BF-476E-A0FA-3E7E27A1FCE8}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace Dictionary
+namespace _Dictionary
 {
     class MyDictionary<TK, TV>
     {
@@ -21,25 +21,24 @@ namespace Dictionary
             TV[] tempValues = values;
 
             keys = new TK[keys.Length + 1];
+            values = new TV[values.Length + 1];
 
-            for (int i = 0; i < tempKeys.Length - 1; i++)
+            for (int i = 0; i < tempKeys.Length; i++)
             {
                 keys[i] = tempKeys[i];
+                values[i] = tempValues[i];
             }
 
 
             keys[keys.Length - 1] = key;
-
-            values = new TV[values.Length + 1];
-
-            for (int j = 0; j < values.Length; j++)
-            {
-                values[j] = tempValues[j];
-            }
-
             values[values.Length - 1] = value;
+
             Console.WriteLine("Key: " + key + " Value: " + value + " added to the dictionary!");
         }
+
+        public int Count { get { return keys.Length; } }
+
     }
 }
+
 
